@@ -1,4 +1,4 @@
-import './CustomButton.css';  // Import the CSS file
+import './CustomUI.css';  // Import the CSS file
 
 const CustomButton = ({ 
   variant = 'default', 

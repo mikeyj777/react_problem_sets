@@ -1,0 +1,174 @@
+.custom-button {
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.2s ease;
+  background: #e0e0e0;
+  color: #333;
+}
+
+.custom-button:hover {
+  background: #d0d0d0;
+}
+
+.custom-button:active {
+  transform: scale(0.98);
+}
+
+.custom-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Plus button */
+.custom-button--plus {
+  background: #4CAF50;
+  color: white;
+  padding: 8px;
+  width: 36px;
+  height: 36px;
+}
+
+.custom-button--plus::before,
+.custom-button--plus::after {
+  content: '';
+  position: absolute;
+  background: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.custom-button--plus::before {
+  width: 16px;
+  height: 2px;
+}
+
+.custom-button--plus::after {
+  width: 2px;
+  height: 16px;
+}
+
+.custom-button--plus:hover {
+  background: #45a049;
+}
+
+/* Minus button */
+.custom-button--minus {
+  background: #f44336;
+  color: white;
+  padding: 8px;
+  width: 36px;
+  height: 36px;
+}
+
+.custom-button--minus::before {
+  content: '';
+  position: absolute;
+  background: white;
+  width: 16px;
+  height: 2px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.custom-button--minus:hover {
+  background: #da190b;
+}
+
+.custom-button--reset {
+  background: #808080; /* Neutral gray */
+  color: white;
+  border-radius: 20px; /* Matching submit button roundness */
+  padding: 8px 24px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.custom-button--reset:hover {
+  background: #666666; /* Darker gray */
+}
+
+.custom-button--reset:active {
+  transform: scale(0.98);
+  background: #4d4d4d; /* Even darker for active state */
+}
+
+.custom-input-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+  max-width: 300px;
+}
+
+.custom-input {
+  padding: 0.5rem 1rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 4px;
+  font-size: 1rem;
+  line-height: 1.5;
+  transition: all 0.2s ease;
+  width: 100%;
+}
+
+.custom-input:focus {
+  outline: none;
+  border-color: #2c5530; /* Hunter green shade */
+  box-shadow: 0 0 0 2px rgba(44, 85, 48, 0.1);
+}
+
+.custom-input:hover:not(:disabled) {
+  border-color: #cccccc;
+}
+
+.custom-input:disabled {
+  background-color: #f5f5f5;
+  cursor: not-allowed;
+}
+
+.custom-input--error {
+  border-color: #f44336;
+}
+
+.custom-input__label {
+  font-weight: 500;
+  color: #333;
+  font-size: 0.875rem;
+}
+
+.custom-input__error {
+  color: #f44336;
+  font-size: 0.75rem;
+}
+
+.custom-input-wrapper--disabled .custom-input__label {
+  color: #666;
+}
+
+/* Add to your existing CustomButton.css */
+.custom-button--submit {
+  background: #2c5530; /* Hunter green */
+  color: white;
+  border-radius: 20px; /* More rounded edges */
+  padding: 8px 24px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.custom-button--submit:hover {
+  background: #1e3921; /* Darker hunter green */
+}
+
+.custom-button--submit:active {
+  transform: scale(0.98);
+  background: #162a17; /* Even darker for active state */
+}

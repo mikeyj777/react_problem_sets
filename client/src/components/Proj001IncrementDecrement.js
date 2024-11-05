@@ -15,17 +15,12 @@ import { useState } from 'react';
 import CustomButton from './ui/CustomButton';
 import '../style/Proj001.css';
 
-const Proj001IncrementDecrement = () => {
-    const [value, setValue] = useState(0);
-    const increment = () => {
-        console.log('increment');
-        setValue(value + 1);
-    }
+const Proj001IncrementDecrement = ( {initialValue = 100} ) => {
+    const [value, setValue] = useState(initialValue);
 
-    const decrement = () => {
-        console.log('decrement');
-        setValue(value - 1);
-    }
+    const increment = () => setValue(prev => prev + 1);
+    const decrement = () => setValue(prev => prev - 1);
+    const resetValue = () => setValue(initialValue);
 
     return (
         <div className="counter-container">
@@ -38,6 +33,10 @@ const Proj001IncrementDecrement = () => {
                 variant="minus"
                 onClick={decrement}
             />
+            <CustomButton variant="reset" onClick={resetValue}>
+                Reset Value
+            </CustomButton>
+            
         </div>
     )
 
