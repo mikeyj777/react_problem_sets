@@ -1,0 +1,81 @@
+.custom-button {
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.2s ease;
+  background: #e0e0e0;
+  color: #333;
+}
+
+.custom-button:hover {
+  background: #d0d0d0;
+}
+
+.custom-button:active {
+  transform: scale(0.98);
+}
+
+.custom-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Plus button */
+.custom-button--plus {
+  background: #4CAF50;
+  color: white;
+  padding: 8px;
+  width: 36px;
+  height: 36px;
+}
+
+.custom-button--plus::before,
+.custom-button--plus::after {
+  content: '';
+  position: absolute;
+  background: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.custom-button--plus::before {
+  width: 16px;
+  height: 2px;
+}
+
+.custom-button--plus::after {
+  width: 2px;
+  height: 16px;
+}
+
+.custom-button--plus:hover {
+  background: #45a049;
+}
+
+/* Minus button */
+.custom-button--minus {
+  background: #f44336;
+  color: white;
+  padding: 8px;
+  width: 36px;
+  height: 36px;
+}
+
+.custom-button--minus::before {
+  content: '';
+  position: absolute;
+  background: white;
+  width: 16px;
+  height: 2px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.custom-button--minus:hover {
+  background: #da190b;
+}

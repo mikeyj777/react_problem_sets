@@ -1,0 +1,17 @@
+.counter-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.counter-value {
+  min-width: 3rem;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 0.5rem;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+  color: #333;
+}
