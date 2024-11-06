@@ -1,3 +1,15 @@
+/*
+Project 3: Todo List
+
+Classic todo app with add/remove/toggle
+Learning goals:
+
+Array state management
+Complex state updates
+List rendering
+*/
+ 
+
 import React, { useState } from 'react';
 import './ui/CustomUI.css'
 import '../style/Proj003.css';
